@@ -1,0 +1,116 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/MazeTiles/LabyrinthTiles.tres" type="TileSet" id=1]
+[ext_resource path="res://game/gamestate.gd" type="Script" id=2]
+[ext_resource path="res://assets/Backround.png" type="Texture" id=3]
+[ext_resource path="res://chest/chest.tscn" type="PackedScene" id=4]
+[ext_resource path="res://OldMan.tscn" type="PackedScene" id=5]
+[ext_resource path="res://new_navigationpolygonLevel1.tres" type="NavigationPolygon" id=6]
+[ext_resource path="res://TitleMenu.tscn" type="PackedScene" id=7]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 23, 12 )
+
+[node name="game" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+bake_navigation = true
+format = 1
+tile_data = PoolIntArray( -1, 16, 0, -65536, 16, 0, -65535, -1610612720, 0, -65534, 16, 0, -65533, 16, 0, -65532, 16, 0, -65531, 16, 0, -65530, 16, 0, -65529, 16, 0, -65528, 16, 0, -65527, 16, 0, -65526, 16, 0, -65525, 16, 0, -65524, 16, 0, -65523, 16, 0, -65522, 16, 0, -65521, 16, 0, 65535, 16, 0, 0, 536870924, 0, 1, -1073741823, 0, 2, 14, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 8, 7, 0, 9, 7, 0, 10, 7, 0, 11, 1073741830, 0, 12, 1073741830, 0, 13, 1073741830, 0, 14, 1073741832, 0, 15, 536870928, 0, 131071, 16, 0, 65536, 536870920, 0, 65537, 536870912, 0, 65538, 536870922, 0, 65539, 536870913, 0, 65540, 536870922, 0, 65541, 10, 0, 65542, 1073741831, 0, 65543, 536870922, 0, 65544, 10, 0, 65545, 536870922, 0, 65546, 14, 0, 65547, 536870921, 0, 65548, 536870923, 0, 65549, 536870916, 0, 65550, 8, 0, 65551, 536870928, 0, 196607, 16, 0, 131072, 536870924, 0, 131073, 536870927, 0, 131074, 9, 0, 131075, 1073741831, 0, 131076, 536870912, 0, 131077, 8, 0, 131078, 14, 0, 131079, 4, 0, 131080, 9, 0, 131081, 8, 0, 131082, 1073741837, 0, 131083, 536870921, 0, 131084, 9, 0, 131085, 0, 0, 131086, 1073741832, 0, 131087, 536870928, 0, 262143, 16, 0, 196608, 536870916, 0, 196609, 536870926, 0, 196610, 13, 0, 196611, 536870922, 0, 196612, 536870923, 0, 196613, 10, 0, 196614, 3, 0, 196615, 4, 0, 196616, 11, 0, 196617, 1610612744, 0, 196618, 1073741828, 0, 196619, 536870920, 0, 196620, 8, 0, 196621, 536870920, 0, 196622, 8, 0, 196623, 536870928, 0, 327679, 16, 0, 262144, 536870920, 0, 262145, 536870919, 0, 262146, 536870922, 0, 262147, 536870923, 0, 262148, 536870923, 0, 262149, 1073741834, 0, 262150, 6, 0, 262151, 0, 0, 262152, 4, 0, 262153, 1610612747, 0, 262154, 1073741834, 0, 262155, 1073741831, 0, 262156, 1073741831, 0, 262157, 1073741831, 0, 262158, 1610612749, 0, 262159, 536870928, 0, 393215, 16, 0, 327680, 1610612744, 0, 327681, 536870919, 0, 327682, 536870925, 0, 327683, 536870923, 0, 327684, 536870923, 0, 327685, 10, 0, 327686, 7, 0, 327687, 8, 0, 327688, -1610612735, 0, 327689, 1610612747, 0, 327690, 10, 0, 327691, 1073741832, 0, 327692, 1610612744, 0, 327693, 1610612743, 0, 327694, 536870925, 0, 327695, 536870928, 0, 458751, 16, 0, 393216, 536870920, 0, 393217, 536870919, 0, 393218, 536870922, 0, 393219, 536870923, 0, 393220, 536870923, 0, 393221, 1073741834, 0, 393222, 1610612742, 0, 393223, 7, 0, 393224, 1610612743, 0, 393225, 8, 0, 393226, 9, 0, 393227, 4, 0, 393228, 13, 0, 393229, 1610612743, 0, 393230, 1610612749, 0, 393231, 536870928, 0, 524287, 16, 0, 458752, 1610612744, 0, 458753, 536870919, 0, 458754, 536870925, 0, 458755, 536870923, 0, 458756, 536870916, 0, 458757, 536870922, 0, 458758, 536870920, 0, 458759, 7, 0, 458760, 7, 0, 458761, 7, 0, 458762, 8, 0, 458763, 13, 0, 458764, 536870922, 0, 458765, 1610612744, 0, 458766, 536870925, 0, 458767, 536870928, 0, 589823, 16, 0, 524288, 536870920, 0, 524289, 536870919, 0, 524290, -1610612727, 0, 524291, 536870925, 0, 524292, 536870927, 0, 524293, 536870927, 0, 524294, 536870913, 0, 524295, 7, 0, 524296, 7, 0, 524297, 7, 0, 524298, 7, 0, 524299, 7, 0, 524300, 8, 0, 524301, 536870920, 0, 524302, 536870926, 0, 524303, 536870928, 0, 655359, 16, 0, 589824, 16, 0, 589825, 16, 0, 589826, 17, 0, 589827, 16, 0, 589828, 16, 0, 589829, 16, 0, 589830, 16, 0, 589831, 16, 0, 589832, 16, 0, 589833, 16, 0, 589834, 16, 0, 589835, 16, 0, 589836, 16, 0, 589837, 16, 0, 589838, 16, 0, 589839, 16, 0 )
+
+[node name="Players" type="Node" parent="."]
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Players"]
+navpoly = ExtResource( 6 )
+
+[node name="PlayerSpawn" type="Position2D" parent="."]
+position = Vector2( 923, 423 )
+
+[node name="AIs" type="Node" parent="."]
+
+[node name="CanvasLayer" type="ParallaxBackground" parent="."]
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 2, 0 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Chests" type="Node" parent="."]
+
+[node name="Chest" parent="Chests" instance=ExtResource( 4 )]
+position = Vector2( 429, 160 )
+
+[node name="Chest2" parent="Chests" instance=ExtResource( 4 )]
+position = Vector2( 928, 161 )
+
+[node name="Chest3" parent="Chests" instance=ExtResource( 4 )]
+position = Vector2( 38, 356 )
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+pause_mode = 2
+layer = 5
+visible = false
+
+[node name="MazeExit" type="Area2D" parent="." groups=["Finishline"]]
+position = Vector2( 159, 652 )
+collision_layer = 17
+collision_mask = 2
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MazeExit"]
+position = Vector2( 1, 0 )
+shape = SubResource( 3 )
+
+[node name="OldMan" parent="." groups=["Oldman"] instance=ExtResource( 5 )]
+position = Vector2( 422, 546 )
+scale = Vector2( 0.996135, 1.00449 )
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+layer = 5
+visible = false
+
+[node name="TitleMenu" parent="CanvasLayer3" instance=ExtResource( 7 )]
+
+[node name="AI_Targetpositions" type="Node2D" parent="."]
+
+[node name="Target1" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 356, 544 )
+
+[node name="Target2" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 474, 346 )
+
+[node name="Target3" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 362, 410 )
+
+[node name="Target4" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 558, 543 )
+
+[node name="Target5" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 681, 94 )
+
+[node name="Target6" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 918, 296 )
+
+[node name="Target7" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 908, 546 )
+
+[node name="Target8" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 91, 224 )
+
+[node name="Target9" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 603, 98 )
+
+[node name="Target10" type="Position2D" parent="AI_Targetpositions" groups=["AI_Targetpositions"]]
+position = Vector2( 28, 32 )
+
+[node name="ResetTimer" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+
+[connection signal="body_entered" from="MazeExit" to="." method="_on_MazeExit_body_entered"]
+
+[editable path="CanvasLayer3/TitleMenu"]

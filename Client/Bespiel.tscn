@@ -1,0 +1,160 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/MazeTiles/MazeTiles0.png" type="Texture" id=1]
+[ext_resource path="res://assets/MazeTiles/MazeTiles1.png" type="Texture" id=2]
+[ext_resource path="res://assets/MazeTiles/MazeTiles6.png" type="Texture" id=3]
+
+[sub_resource type="NavigationPolygon" id=7]
+vertices = PoolVector2Array( 8, 0, 56, 0, 56, 56, 8, 8, 0, 56, 0, 8 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 3, 2, 4, 5 ) ]
+outlines = [ PoolVector2Array( 8, 0, 8, 8, 0, 8, 0, 56, 56, 56, 56, 0 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 8, 8, 0, 8, 0, 0, 8, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 64, 56, 56, 56, 56, 0, 64, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 64, 64, 0, 64, 0, 56, 64, 56 )
+
+[sub_resource type="NavigationPolygon" id=2]
+vertices = PoolVector2Array( 8, 0, 56, 0, 56, 8, 8, 8, 64, 8, 64, 56, 56, 56, 8, 56, 56, 64, 8, 64, 0, 56, 0, 8 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 2, 4, 5, 6 ), PoolIntArray( 3, 2, 6, 7 ), PoolIntArray( 6, 8, 9, 7 ), PoolIntArray( 3, 7, 10, 11 ) ]
+outlines = [ PoolVector2Array( 8, 0, 8, 8, 0, 8, 0, 56, 8, 56, 8, 64, 56, 64, 56, 56, 64, 56, 64, 8, 56, 8, 56, 0 ) ]
+
+[sub_resource type="NavigationPolygon" id=3]
+vertices = PoolVector2Array( 0, 8, 64, 8, 64, 56, 56, 56, 56, 64, 8, 64, 8, 56, 0, 56 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 3, 4, 5, 6 ), PoolIntArray( 0, 3, 6 ), PoolIntArray( 0, 6, 7 ) ]
+outlines = [ PoolVector2Array( 0, 8, 0, 56, 8, 56, 8, 64, 56, 64, 56, 56, 64, 56, 64, 8 ) ]
+
+[sub_resource type="TileSet" id=4]
+0/name = "MazeTiles6.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/navigation = SubResource( 7 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 8 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+}, {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "MazeTiles0.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/navigation = SubResource( 2 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "MazeTiles1.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/navigation = SubResource( 3 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="TileSet" id=5]
+0/name = "MazeTiles0.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "MazeTiles1.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "MazeTiles6.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="NavigationPolygon" id=6]
+vertices = PoolVector2Array( 618, 221, 666, 221, 606, 222, 675, 90, 679, 234, 672, 167, 668, 155, 665, 101, 536, 227, 548, 221, 533, 89, 615, 98, 607, 101, 540, 101, 544, 161, 546, 171, 608, 154, 601, 154, 616, 165, 606, 171 )
+polygons = [ PoolIntArray( 0, 1, 2 ), PoolIntArray( 3, 4, 5 ), PoolIntArray( 1, 5, 4 ), PoolIntArray( 3, 5, 6, 7 ), PoolIntArray( 1, 4, 8, 2 ), PoolIntArray( 9, 2, 8 ), PoolIntArray( 10, 3, 7, 11 ), PoolIntArray( 10, 11, 12, 13 ), PoolIntArray( 8, 10, 13, 14 ), PoolIntArray( 9, 8, 14, 15 ), PoolIntArray( 12, 11, 16, 17 ), PoolIntArray( 6, 5, 18, 16 ), PoolIntArray( 18, 0, 2, 19, 16 ), PoolIntArray( 17, 16, 19, 15, 14 ) ]
+outlines = [ PoolVector2Array( 533, 89, 536, 227, 679, 234, 675, 90 ), PoolVector2Array( 540, 101, 544, 161, 601, 154, 607, 101 ), PoolVector2Array( 615, 98, 608, 154, 668, 155, 665, 101 ), PoolVector2Array( 546, 171, 606, 171, 606, 222, 548, 221 ), PoolVector2Array( 616, 165, 618, 221, 666, 221, 672, 167 ) ]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 4 )
+bake_navigation = true
+format = 1
+tile_data = PoolIntArray( 65538, 1610612736, 0, 65539, 2, 0, 65540, -1073741824, 0, 131074, -1073741822, 0, 131075, 1, 0, 131076, -1610612734, 0, 196610, -1610612736, 0, 196611, 1610612738, 0, 196612, 0, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource( 5 )
+format = 1
+tile_data = PoolIntArray( 65544, -536870910, 0, 65545, 536870913, 0, 65546, 1073741826, 0, 131080, -2147483647, 0, 131081, 1610612736, 0, 131082, -536870911, 0, 196616, 536870914, 0, 196617, 1610612737, 0, 196618, -2147483646, 0 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="TileMap2"]
+navpoly = SubResource( 6 )
