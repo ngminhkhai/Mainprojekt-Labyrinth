@@ -1,12 +1,12 @@
-# Mainprojekt-Labyrinth
+# Mainproject-Labyrinth
 
-Hauptprojket im Rahmen der Lehrveranstaltung "Digital Entertaiment Technology"
-Aufgabe: selbständige Plannung und Umsetzung eines PC-Spiels mit Kotlin, in zweier Gruppen.
+Labyrinth is a 2D-Top-Down Multiplayer-Game (via LAN), where you're spawned in an labyrinth with all of you're friends. The first one to escape it is the winner. You can play with up to 6 people or AI-Players to make things more fun.
 
-Labyrinth:
-2D TopDown-Multiplayer-Spiel mit KI-Aspekt-
-  Meine Aufgaben:
-  - Plannung des Spiels
-  - Umsetzung des Basis Spiels und GUI
-  - Programmierung des KI-Aspekts
-  - Programmierung des Multiplayer-Aspekts
+How to Play:
+  Open one Server.exe. (If you choose to play on multiple PCs, choose only one to start the server on.)
+	Open multiple Client.exe, if you're playing on one pc it's best if you have one client that you can controll on you're own and multiple AI-Players, which move on their own. If you choose to have multiple non-AIs, you can controll only one at a time. 
+	If you're logged in and choose the level to play, you can move with the arrow keys to find you're way out.
+
+Code in Gd-Skript and Godot 3.5
+
+This Project was done in 8 weeks in a team of two. I was in charge of building the base game (player movement, maps, Levels) and creating the AI-Players. But I also helped working on the Server-Client-connection and building the Lobby and Score-Scene.
