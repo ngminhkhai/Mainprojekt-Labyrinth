@@ -1,6 +1,6 @@
 # Mainproject-Labyrinth
 
-Labyrinth is a 2D-Top-Down Multiplayer-Game (via LAN), where you're spawned in an labyrinth with all of you're friends. The first one to escape it is the winner. You can play with up to 6 people or AI-Players to make things more fun.
+Labyrinth is a 2D-Top-Down Multiplayer-Game (via LAN), where you're spawned in an labyrinth with all of you're friends. The first one to escape is the winner. You can play with up to 6 people or AI-Players to make things more fun.
 
 How to Play:
   Open one Server.exe. (If you choose to play on multiple PCs, choose only one to start the server on.)
@@ -8,5 +8,3 @@ How to Play:
 	If you're logged in and choose the level to play, you can move with the arrow keys to find you're way out.
 
 Code in Gd-Skript and Godot 3.5
-
-This Project was done in 8 weeks in a team of two. I was in charge of building the base game (player movement, maps, Levels) and creating the AI-Players. But I also helped working on the Server-Client-connection and building the Lobby and Score-Scene.
